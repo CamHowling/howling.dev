@@ -1,0 +1,146 @@
+/*
+theme
+00C3A4
+051122
+1768AC
+FFFFFF
+FF6666
+*/
+
+:root {
+    --page-background-colour: #1768ac;
+    --page-font-colour: #ffffff;
+    --page-heading-font-colour: #00c3a4;
+    --banner-background-colour: #051122;
+    --banner-font-colour: #ffffff;
+    --link-colour: #00c3a4;
+    --link-colour-visited: #ff6666;
+}
+
+.header {
+    background-color: var(--banner-background-colour);
+    color: var(--banner-font-colour);
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+    display: flex;
+
+    h1 {
+        width: 60%;
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+
+body {
+    background-color: var(--page-background-colour);
+    color: var(--page-font-colour);
+
+    h3 {
+        color: var(--page-heading-font-colour);
+        font-weight: bold;
+    }
+
+    .body-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        .about-me {
+            width: 60%;
+            padding-top: 40px;
+        }
+    }
+}
+
+.image-container {
+    img {
+        max-width: 12vw;
+        height: auto;
+        position: fixed;
+        translate: 5vw -6vw;
+    }
+}
+
+a:active {
+    color: var(--link-colour);
+}
+
+a:visited {
+    color: var(--link-colour-visited);
+}
+
+footer {
+    background-color: var(--banner-background-colour);
+    color: var(--banner-font-colour);
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.languages {
+    overflow: hidden;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+
+    height: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .slide {
+        max-width: 5vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .slider {
+        width: 30%;
+        margin-right: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: var(--speed) linear infinite slider;
+        flex-shrink: 0;
+    }
+
+    .delayed-slider {
+        visibility: hidden;
+        width: 30%;
+        margin-left: -15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: var(--speed) linear calc(var(--speed) / 2) infinite
+            delayed-slider;
+        flex-shrink: 0;
+
+        .visible {
+            visibility: visible;
+        }
+    }
+}
+
+:root {
+    --height: 145vh;
+    --speed: 30s;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateY(var(--height));
+    }
+    100% {
+        transform: translateY(calc(var(--height) * -1));
+    }
+}
+
+@keyframes delayed-slider {
+    0% {
+        transform: translateY(var(--height));
+    }
+    100% {
+        transform: translateY(calc(var(--height) * -1));
+    }
+}

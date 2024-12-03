@@ -51,6 +51,22 @@ FF6666
             max-width: 50%;
         }
     }
+
+    @media (max-width: 848px) {
+        .profile-container {
+            visibility: hidden;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 582px) {
+        h1 {
+            font-size: 32px;
+        }
+    }
 }
 
 body {
@@ -76,11 +92,12 @@ body {
             padding-top: 20px;
 
             .language-icons {
-                margin: 20px 0 20px 0;
+                margin: 0px 0 20px 0;
 
                 .icon {
                     padding-right: 1em;
-                    max-width: 5vw;
+                    margin-top: 20px;
+                    width: 100px;
                     height: auto;
                 }
             }

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="text/javascript" src="index.js"></script>
     <head>
         <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="Personal website of Cameron Howling — Full Stack Developer (Angular, C#, TypeScript)."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -16,115 +19,134 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
-
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" href="index.css" />
         <title>Howling.Dev</title>
     </head>
     <body>
-        <div>
-            <div class="header">
-                <div class="profile-container">
-                    <img class="profile" src="images/comic 512.png" />
-                </div>
-                <h1>Cameron Howling</h1>
+        <header class="header">
+            <div class="profile-container">
+                <img
+                    class="profile"
+                    src="images/comic-512.png"
+                    alt="Cameron Howling profile"
+                />
             </div>
-            <div class="body-container">
-                <div class="about-me">
+            <h1>Cameron Howling</h1>
+        </header>
+
+        <main class="body-container">
+            <div class="about-me">
+                <section>
                     <h3>About Me</h3>
-                    <h5>
+                    <p>
                         I&rsquo;m a Full Stack Developer from Melbourne with a
                         Masters in Information Technology (Virtual Reality).
-                    </h5>
-                    <h5>
+                    </p>
+                    <p>
                         I&rsquo;ve been working with software professionally
                         since 2016, and as a full stack web developer since
                         2022.
-                    </h5>
+                    </p>
                     <br />
-                    <h5>
+                    <p>
                         During my career I've worked as a contributor, a leader,
                         and a mentor.
-                    </h5>
-                    <h5>
-                        I enjoy working with Angular and C#, and have worked
+                    </p>
+                    <p>
+                        I enjoy working with C# and Angular, and have worked
                         with all the languages and tools below.
-                    </h5>
-                    <br />
+                    </p>
+
                     <div class="language-icons">
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt="JavaScript icon"
                         />
-
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                            alt="TypeScript icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                            alt="Angular icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="React icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                            alt="C# icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                            alt="C++ icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                            alt="Azure SQL icon"
                         />
-
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
+                            alt="Godot icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+                            alt="Unity icon"
                         />
                         <img
                             class="icon"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg"
+                            alt="Unreal Engine icon"
                         />
                     </div>
+                </section>
+                <section>
                     <h3>Projects</h3>
-                    <h5>
+                    <p>
                         In 2024 I made a website to help people play a
                         <a
                             href="https://boardgamegeek.com/boardgame/283355/dune"
                             >Dune boardgame</a
                         >.
-                        <br />
+                    </p>
+                    <p>
                         It had 1000 unique visitors in 2024 and is open source.
-                        <br />
-                        <br />
+                    </p>
+                    <p>
                         <a href="https://treacherytracker.com/"
                             >https://treacherytracker.com/</a
                         >
-                        &nbsp;
                         <a href="https://github.com/CamHowling/DuneAtreides"
                             >[Github Repo]</a
                         >
-                    </h5>
-                    <br />
+                    </p>
+                </section>
+                <section>
                     <h3>Contact Me</h3>
-                    <h5>
+                    <p>
                         You can find me over at
                         <a href="https://www.linkedin.com/in/cameron-howling/"
                             >LinkedIn</a
                         >.
-                    </h5>
-                    <br />
-                </div>
+                    </p>
+                </section>
             </div>
-        </div>
-        <div class="footer">Copyright © Cameron Howling 2024</div>
+        </main>
+
+        <footer class="footer">
+            Copyright © <span id="current-year"></span> Cameron Howling
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

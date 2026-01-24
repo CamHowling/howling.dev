@@ -7,10 +7,6 @@ FFFFFF
 FF6666
 */
 
-/* * {
-    box-shadow: inset 0px 0px 0px 1px #f00;
-} */
-
 :root {
     --page-background-colour: #1768ac;
     --page-font-colour: #ffffff;
@@ -26,46 +22,44 @@ FF6666
     color: var(--banner-font-colour);
     width: 100%;
     padding: 20px 0px 20px 0px;
-
     display: flex;
     justify-content: left;
     align-items: center;
+}
 
-    h1 {
-        width: 60%;
-        font-size: 60px;
-        font-weight: bold;
-        text-align: left;
+.header h1 {
+    width: 60%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.header .profile-container {
+    max-width: 20%;
+    height: auto;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .profile-container .profile {
+    max-width: 50%;
+}
+
+@media (max-width: 848px) {
+    .header .profile-container {
+        visibility: hidden;
     }
 
-    .profile-container {
-        max-width: 20%;
-        height: auto;
-        overflow-y: auto;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .profile {
-            max-width: 50%;
-        }
+    .header h1 {
+        font-size: 40px;
     }
+}
 
-    @media (max-width: 848px) {
-        .profile-container {
-            visibility: hidden;
-        }
-
-        h1 {
-            font-size: 40px;
-        }
-    }
-
-    @media (max-width: 582px) {
-        h1 {
-            font-size: 32px;
-        }
+@media (max-width: 582px) {
+    .header h1 {
+        font-size: 32px;
     }
 }
 
@@ -76,40 +70,42 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-
-    h3 {
-        color: var(--page-heading-font-colour);
-        font-weight: bold;
-    }
-
-    .body-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        .about-me {
-            width: 60%;
-            padding-top: 20px;
-
-            .language-icons {
-                margin: 0px 0 20px 0;
-
-                .icon {
-                    padding-right: 1em;
-                    margin-top: 20px;
-                    width: 100px;
-                    height: auto;
-                }
-            }
-        }
-    }
 }
 
-a:active {
-    color: var(--link-colour);
+body h3 {
+    color: var(--page-heading-font-colour);
+    font-weight: bold;
 }
 
-a:active {
+body p {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.body-container .about-me {
+    width: 60%;
+}
+
+.about-me .language-icons .icon {
+    margin: 20px 16px 0px 0px;
+    width: 92px;
+    height: auto;
+}
+
+section {
+    margin: 20px 0px;
+}
+
+a,
+a:active,
+a:link,
+a:hover {
     color: var(--link-colour);
 }
 
